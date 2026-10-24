@@ -1,0 +1,368 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+
+header{
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 10vh;
+    width: 100%;
+    color: white;
+    padding: 20px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+ 
+}
+
+.menuicon {
+    display: none;
+    position: fixed;
+    right: 0;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.bgimg{
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+  background-attachment: fixed;
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.402),
+            rgba(5, 5, 5, 0.774)
+        ),
+        url("https://i.pinimg.com/1200x/08/eb/e8/08ebe8b27f7c5dbc6a5830273056196d.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.bgimgcontent{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+   padding-bottom: 75px;
+}
+
+
+.bgimgcontent h1{
+font-size: 4em;
+color: white;
+
+}
+
+
+.bgimgcontent p{
+color: white;
+}
+
+.btn{
+    height: 50px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 10px;
+    border: none;
+    transition: 1s ease-in;
+    border: 1px solid rgb(255, 253, 253);
+    color: white;
+}
+
+
+.btn:hover{
+  
+    background-color: rgb(255, 255, 255);
+   color: black;
+    border: none;
+}
+
+
+/* about sectioc css start ================================== */
+.aboutimg{
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+
+    background-image:
+        linear-gradient(
+            rgba(10, 9, 9, 0.564),
+            rgba(0, 0, 0, 0.68)
+        ),
+        url("https://i.pinimg.com/736x/ba/99/68/ba99680ce048ff592609b47a1512530d.jpg");
+  background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.flexrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.parent{
+    display: flex;
+    gap: 20px;
+}
+
+.child{
+    width: 450px;
+    height: 500px;
+    background-color: rgba(1, 1, 1, 0.098);
+    border: 1px solid gray;
+}
+
+.one{
+    display: flex;
+    padding: 15px 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.para1{
+    padding-top: 30px;
+    width: 50%;
+    padding-left: 10px;
+    
+}
+.sideimg{
+    height: 200px;
+    width: 200px;
+}
+.parabox{
+    display: flex;
+   
+    flex-direction: row;
+}
+
+.two{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+
+}
+
+.imgtwo{
+    border-radius: 20px;
+}
+
+.aboutimg a:visited {
+    color: white;
+}
+
+
+.thirdsecimg{
+     display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+
+    background-image:
+        linear-gradient(
+            rgba(10, 9, 9, 0.564),
+            rgba(0, 0, 0, 0.68)
+        ),
+        url("https://i.pinimg.com/736x/40/ad/1a/40ad1a2c15451690ddbc6b5fc99faafc.jpg");
+  background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.main h1{
+    font-size: 4em;
+    margin-top: 1.5em;
+    color: white;
+}
+.thirdmain{
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 10px 10px;
+ 
+
+}
+
+.mainchild{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(7, 7, 7, 0.162);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+
+    margin: auto;
+}
+
+.sixseven{
+    font-size: 2em;
+}
+.boxflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.boxflex p{
+font-size: 14px;
+
+}
+
+
+
+/* Media START ======================== LALALALALALALALA  ================================ */
+
+@media (max-width: 1000px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    .menuicon {
+        display: block;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+          position: absolute;
+      
+        right: 0;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        padding: 20px;
+    }
+
+    .header:hover nav {
+        display: flex;
+    }
+
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+
+/*MEDIA ======================== 1000 End==================================== */
+
+
+
+
+
+
+
+/*MEDIA ======================== 850 START==================================== */
+@media (max-width: 850px){
+  .thirdmain  {
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+  }
+}
+
+
+
+/*MEDIA ======================== 500 START==================================== */
+@media (max-width: 500px){
+    
+    .sideimg{
+        width: 100%;
+    }
+    .para1{
+        width: 100%;
+    }
+.child{
+     width: 300px;
+     height: auto;
+      display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+.imgtwo{
+    width: 100%;
+}
+}
+
+@media (max-width: 360px){
+    .bgimgcontent h1{
+        font-size: 2em;
+        padding: 10px 10px;
+    }
+    .bgimgcontent p{
+          padding: 10px 10px;
+    }
+    .sideimg{
+        width: 150px;
+        height: 150px;
+    }
+    .child{
+        width: 230px;
+    }
+
+    .main h1{
+        font-size: 2em;
+        padding: 10px 10px;
+    }
+    .mainchild{
+        width: 200px;
+        height: 200px;
+    }
+
+}
