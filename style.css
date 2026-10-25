@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
+    color: white;
 }
 
 
@@ -189,7 +190,7 @@ color: white;
     color: white;
 }
 
-
+/* ========================================= 3rd section start ================== css */
 .thirdsecimg{
      display: flex;
 
@@ -250,7 +251,132 @@ font-size: 14px;
 
 }
 
+.img4th{
+        display: flex;
 
+    justify-content: center;
+
+    text-align: center;
+
+  background-attachment: fixed;
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.402),
+            rgba(5, 5, 5, 0.774)
+        ),
+        url("https://i.pinimg.com/1200x/43/5e/b6/435eb64e7d4d427a7266c2abdf61c72a.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.hr{
+  border: 1px solid rgb(29, 28, 28);
+}
+.childbox{
+/* border: 1px solid gray; */
+border: none;
+background-color: rgba(7, 7, 7, 0.055);
+padding-bottom: 5em;
+}
+
+.childbox h1{
+    font-size: 3em;
+    
+}
+.hone{
+    margin-bottom: 0.3em;
+}
+.contentimg{
+      display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+
+    background-image:
+        linear-gradient(
+            rgba(10, 9, 9, 0.564),
+            rgba(0, 0, 0, 0.68)
+        ),
+        url("https://i.pinimg.com/736x/44/b2/66/44b266ba8d283b0226fdfe26dc32205d.jpg");
+  background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.cotentmain h1{
+font-size: 4em;
+color: white;
+margin-top: 1.5em;
+}
+
+
+
+
+.cotentmain p{
+
+color: white;
+}
+
+
+.maininputbox{
+   
+    margin: auto;
+    height: 500px;
+    width: 800px;
+    padding: 30px 10px;
+}
+.inputmain{
+ display: flex;
+justify-content: center;
+ gap: 20px;
+}
+
+.nameinput::placeholder {
+    color: white;
+    
+}
+
+.nameinput{
+height: 55px;
+width: 280px;
+text-indent: 1em;
+border: none;
+outline: none;
+color: white;
+background-color: rgba(128, 128, 128, 0.68);
+}
+
+
+.message{
+ text-indent: 1em;  
+ height: 160px;
+width: 600px; 
+color: white; 
+background-color: rgba(128, 128, 128, 0.258);
+padding: 20px 10px;
+
+}
+
+footer{
+    width: 100%;
+    min-height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+   padding: 2em;
+}
+
+.footer{
+    
+}
 
 /* Media START ======================== LALALALALALALALA  ================================ */
 
@@ -299,10 +425,6 @@ font-size: 14px;
 }
 
 
-/*MEDIA ======================== 1000 End==================================== */
-
-
-
 
 
 
@@ -315,8 +437,23 @@ font-size: 14px;
     flex-wrap: wrap;
     
   }
+  .maininputbox{
+    width: 100%;
+  }
 }
-
+@media (max-width: 640px){
+    .inputmain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+       
+    }
+    .message{
+        width: 100%;
+    }
+}
 
 
 /*MEDIA ======================== 500 START==================================== */
@@ -353,7 +490,7 @@ font-size: 14px;
         height: 150px;
     }
     .child{
-        width: 230px;
+        width: 100%;
     }
 
     .main h1{
