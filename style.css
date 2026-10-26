@@ -328,7 +328,7 @@ color: white;
 .maininputbox{
    
     margin: auto;
-    height: 500px;
+    min-height: 300px;
     width: 800px;
     padding: 30px 10px;
 }
@@ -374,7 +374,18 @@ footer{
    padding: 2em;
 }
 
-.footer{
+.bttn{
+  
+   
+    width: 250px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 7em;
+  align-items: center;
+  text-indent: 6em;
+
+    
     
 }
 
@@ -475,8 +486,13 @@ footer{
 .imgtwo{
     width: 100%;
 }
+.bttn{
+    margin-left: 10px;
+    
+   
 }
-
+} 
+/* ============================================= 300px start  */
 @media (max-width: 360px){
     .bgimgcontent h1{
         font-size: 2em;
@@ -493,6 +509,9 @@ footer{
         width: 100%;
     }
 
+    .nameinput{
+        width: 100%;
+    }
     .main h1{
         font-size: 2em;
         padding: 10px 10px;
